@@ -7,4 +7,5 @@ app_name = 'pokemon'
 urlpatterns = [
     path('<int:pokemon_id>/', views.getPokemonData, name='getData'),
     path('pokemonList/', views.getPokemonList, name='getList'),
+    path('insertPokemon/', views.insertarPokemon, name='insert'),
 ]

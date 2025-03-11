@@ -80,4 +80,16 @@ document.addEventListener('DOMContentLoaded', function() {
             suggestionsDiv.style.display = "none";
         }
     });
+
+    var insertPokemonUrl = "/pokemon/insertPokemon/";
+    $.ajax({
+        url: insertPokemonUrl,
+        method: "GET",
+        success: function(response) {
+            console.log("Datos insertados correctamente");
+        },
+        error: function(err) {
+            console.error("Error al insertar datos:", err);
+        }
+    });
 });
